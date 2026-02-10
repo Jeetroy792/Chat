@@ -7,7 +7,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 # --- CONFIGURATION ---
-MAIN_BOT_TOKEN = '8367209194:AAH90xEOilWLVxFZ6d1bZ9Wgu1V7uwfIe40' 
+MAIN_BOT_TOKEN = '8367209194:AAG9KjF5v5ti8KCedqqiX1sVl1PlOed30c4' 
 OWNER_ID = 8229228616
 LOG_CHANNEL_ID = -1003841412573 
 # ---------------------
