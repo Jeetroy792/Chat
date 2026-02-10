@@ -105,7 +105,8 @@ def main():
     
     # এই লাইনে drop_pending_updates=True যোগ করো
     # এটি চালু হওয়ার সময় আগের সব কনফ্লিক্ট সেশন মুছে দেবে
-    master_app.run_polling(drop_pending_updates=True) 
+    master_app.run_polling(drop_pending_updates=True, close_loop=False)
+ 
 
 if __name__ == '__main__':
     main()
