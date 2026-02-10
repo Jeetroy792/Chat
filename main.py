@@ -93,7 +93,23 @@ def main():
     master_app.add_handler(CommandHandler("addbot", add_bot))
     
     print("Master Bot is running...")
-    master_app.run_polling()
+    def main():
+    Thread(target=run_flask).start()
+    master_app = Application.builder().token(MAIN_BOT_TOKEN).build()
+    
+    # অ্যাড হ্যান্ডলারগুলো আগের মতোই থাকবে
+    master_app.add_handler(CommandHandler("start", main_start))
+    master_app.add_handler(CommandHandler("addbot", add_bot))
+    
+    print("Master Bot is running...")
+    
+    # এই লাইনে drop_pending_updates=True যোগ করো
+    # এটি চালু হওয়ার সময় আগের সব কনফ্লিক্ট সেশন মুছে দেবে
+    master_app.run_polling(drop_pending_updates=True) 
+
+if __name__ == '__main__':
+    main()
+    
 
 if __name__ == '__main__':
     main()
