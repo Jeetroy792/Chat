@@ -7,10 +7,10 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 # --- CONFIGURATION ---
-MAIN_BOT_TOKEN = 'YOUR_MAIN_MASTER_BOT_TOKEN' 
+MAIN_BOT_TOKEN = '8367209194:AAEdIaBp0SKGyb1OGhtueHJupM3DMXUMXsk' 
 OWNER_ID = 8229228616
 # যে চ্যানেলে সব চাইল্ড বটের মেসেজ ফরওয়ার্ড হবে
-LOG_CHANNEL_ID = -1002364857362 
+LOG_CHANNEL_ID = -1003841412573 
 # ---------------------
 
 logging.basicConfig(level=logging.INFO)
